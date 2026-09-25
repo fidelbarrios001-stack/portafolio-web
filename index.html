@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Personal</title>
-    <link rel="stylesheet" href="CSS/estyle.css">
+    
+   
+    <title>Practicas  - Aplicaciones Web UTL</title>
+    <meta name="description" content="Portafolio de evidencias de Fidel Alejandro Barrios Agapito para la materia de Aplicaciones Web en la UTL.">
+    <meta name="keywords" content="UTL, Aplicaciones Web, Portafolio, Desarrollo de Software, HTML, CSS">
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+  
+    <link rel="stylesheet" href="./CSS/estyle.css?v=999">
 </head>
 <body>
 
-   
     <header class="header-ticket">
         <div class="alerta-marquesina">
-            <span>*** Practica /// APLICACIONES WEB UTL ***</span>
+            <span>*** PRACTICA /// APLICACIONES WEB UTL ***</span>
         </div>
         <nav class="menu-polaroid">
             <a href="#perfil" class="btn-stick">01. INICIO</a>
@@ -29,19 +39,18 @@
             
             <div class="marco-polaroid">
                 <img src="imagenes/OIP (1).webp" alt="Foto de perfil">
-                <span class="pie-polaroid">MI   Banner </span>
+                <span class="pie-polaroid">MI FOTO .JPG</span>
             </div>
 
             <div class="info-perfil">
                 <span class="etiqueta-destacada">¡HOLA BIENVENIDO FURRIT@!</span>
                 <h1>USUARIO</h1>
                 <p class="texto-recorte">
-                    Bienvenido/a a mi sitio web personal. Este proyecto fue desarrollado para la materia de <strong>Aplicaciones Web</strong> para presentar mis evidencias y datos de contacto. Tambien con motivo de practicar lo aprendido.
+                    Bienvenido/a a mi sitio web personal. Este proyecto fue desarrollado para la materia de <strong>Aplicaciones Web</strong> para presentar mis evidencias y datos de contacto. También con motivo de practicar lo aprendido.
                 </p>
             </div>
         </section>
 
-        
         <div class="grupo-desalineado">
             
             <section id="datos" class="tarjeta-fanzine amarillo-chicle rotar-derecha">
@@ -66,27 +75,34 @@
 
         </div>
 
-        
         <section id="laboral" class="tarjeta-fanzine morado-chocante rotar-derecha">
             <div class="cinta-pegamento"></div>
-            <h2>HABILIDADES PERSONALES</h2>
+            <h2>Habilidades adquiridas</h2>
             <div class="bloque-puesto">
-                <span class="badge-puesto">Cuento con experencia en los siguientes programas : MYSQL,Java,C++ y Cisco Paket Tracer </span>
-                <p><strong>PROYECTOS INDEPENDIENTES</strong></p>
+                <span class="badge-puesto"> Amplio dominio en JAVA, MYSQL y C++</span>
+                <p><strong>ESTADO ACTUAL</strong> Proyecto Independiente</p>
                 <p><strong>AÑO:</strong> 2024</p>
             </div>
         </section>
 
-        
         <section id="contacto" class="tarjeta-fanzine cian-brillante rotar-izquierda">
             <div class="cinta-pegamento"></div>
             <h2>CONTACTO</h2>
-            <p class="texto-contacto">
-                Puedes contactarme directamente en mi correo electrónico o por medio de mis redes personales.
-                Whatsapp: 4794007043.
-
-                Correo electronico: fidelbarrios001@gmail.com.
-
+            <form class="formulario-neo" action="#" method="post">
+                <div class="campo-form">
+                    <label for="nombre">NOMBRE:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="campo-form">
+                    <label for="email">CORREO:</label>
+                    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                </div>
+                <div class="campo-form">
+                    <label for="mensaje">MENSAJE:</label>
+                    <textarea id="mensaje" name="mensaje" rows="3" placeholder="Escribe tu mensaje..." required></textarea>
+                </div>
+                <button type="submit" class="btn-stick">ENVIAR MENSAJE</button>
+            </form>
         </section>
 
     </main>
